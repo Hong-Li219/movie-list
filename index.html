@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema ｜ 首頁</title>
+    <base target="_self" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg py-1 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="#">
+          <img src="./img/logo-removebg-preview.png" class="logo mb-2 ms-1" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="home nav-link px-3 active" aria-current="page" href="#"
+                >網站首頁</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link px-3 dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                電影介紹
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./ingmovie.html">上映中</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./commovies.html">即將上映</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="price.html"
+                >購票資訊</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" aria-current="page" href="book.html"
+                >線上訂票</a
+              >
+            </li>
+          </ul>
+          <!-- 搜尋功能 -->
+          <!-- <form
+            id="searchArea"
+            class="d-flex justify-content-sm-start p-1"
+            role="search"
+          >
+            <input
+              class="form-control me-3 w-75 navInput"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success btn-sm navBtn" type="submit">
+              Search
+            </button>
+          </form> -->
+          <!-- 切換顏色功能 -->
+          <!-- <div class="form-check form-switch">
+            <label class="form-check-label" for="colorSwitch"></label>
+            <i class="bi bi-moon-stars-fill text-light fs-6"></i>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              role="switch"
+              id="colorSwitch"
+            />
+            <label class="form-check-label" for="colorSwitch"
+              ><i class="bi bi-brightness-high-fill text-light fs-5"></i
+            ></label>
+          </div> -->
+        </div>
+      </div>
+      <div id="line"></div>
+    </nav>
+
+    <!-- 輪播圖X3 -->
+    <section
+      id="topImg"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#topImg"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#topImg"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#topImg"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://www.ambassador.com.tw/Uploads/334/de643d26-547c-4b8a-a6ba-35ad6e08b126.jpg"
+            class="d-block w-100 img-fluid changeImg1"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.ambassador.com.tw/Uploads/337/bcd03223-3ecb-4760-ab00-82362d157d9e.jpg"
+            class="d-block w-100 img-fluid changeImg2"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.ambassador.com.tw/Uploads/339/98d19091-df71-40b1-8787-c630bb2f44cd.jpg"
+            class="d-block w-100 img-fluid changeImg3"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#topImg"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#topImg"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <!-- 精選電影X8 -->
+
+    <div class="mt-5 mb-5 movies container-fluid">
+      <div class="d-flex justify-content-center align-items-center">
+        <h2>精選電影</h2>
+        <div id="bgImg1"></div>
+      </div>
+
+      <div class="d-flex justify-content-center mt-5 special">
+        <div id="specialMovies" class="d-flex"></div>
+      </div>
+      <div>
+        <button class="mx-5 mt-3" id="pre" onclick="updateMoviePre()">
+          <i class="bi bi-arrow-left-square-fill fs-1"></i>
+        </button>
+        <button class="mx-5 mt-3" id="next" onclick="updateMovieNext()">
+          <i class="bi bi-arrow-right-square-fill fs-1"></i>
+        </button>
+      </div>
+    </div>
+    <!-- 焦點電影 -->
+
+    <div
+      id="focus1"
+      class="focus container-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="focusInfo mt-5 mx-3">
+        <h2>強檔電影</h2>
+        <h3 class="mt-4">捍衛任務4</h3>
+        <p>《捍衛任務系列》原班人馬打造最新史詩篇章</p>
+        <p>
+          「葉問」對決「殺神」！香港動作男星甄子丹正式參戰，與基努李維展開大銀幕對決
+        </p>
+        <p>跨歐美大陸實地拍攝，耗資破億美金成本打造「捍衛任務」宇宙</p>
+        <p>
+          約翰維克繼續與驅逐他的殺手組織「高桌會」展開對抗，隨著懸賞金額的不斷飆升，他將迎來殺手生涯最強大的對手
+        </p>
+      </div>
+      <iframe
+        class="mx-3"
+        src="https://www.youtube.com/embed/U2Z2nyoBC6k"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div
+      id="focus2"
+      class="focus container-100 d-flex justify-content-sm-around align-items-center"
+    >
+      <div class="focusInfo mt-5 mx-3">
+        <h2>強檔電影</h2>
+        <h3 class="mt-4">BLUE GIANT 藍色巨星</h3>
+        <p>
+          《名偵探柯南：零的執行人》立川讓執導、《航海王劇場版：紅髮歌姬》山田裕貴、
+        </p>
+        <p>《東京復仇者》間宮祥太朗、《百花》岡山天音配音</p>
+        <p>
+          薩克斯風新星馬場智章、世界級鋼琴家上原廣美、人氣樂團「millennium
+          parade」鼓手石若駿擔任幕後演奏樂手
+        </p>
+        <p>全力奏響不會再有的這個瞬間吧!</p>
+      </div>
+      <iframe
+        class="mx-3"
+        src="https://www.youtube.com/embed/sPIOO3Co0vs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div
+      id="focus3"
+      class="focus container-100 d-flex justify-content-sm-around align-items-center"
+    >
+      <div class="focusInfo mt-5 mx-3">
+        <h2>強檔電影</h2>
+        <h3 class="mt-4">SEE HEAR LOVE 看不見聽不見也愛你</h3>
+        <p>
+          以漫畫為職業的泉本真治，某天得知自己的作品即將被改編成電影的好消息
+        </p>
+        <p>沒想到得來不易的快樂卻稍縱即逝，真治突然病倒，漸漸失去視力</p>
+        <p>就在這時，真治的漫畫迷，耳朵失聰的相田響拯救了他</p>
+        <p>
+          於是，「看不到」的漫畫家與「聽不到」的女孩，展開了不可思議的同居生活
+        </p>
+      </div>
+      <iframe
+        class="mx-3"
+        src="https://www.youtube.com/embed/CxO4j30bpIM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <section
+      class="activity container-100 d-flex justify-content-center align-items-center flex-wrap"
+    >
+      <div class="actArea d-flex justify-content-between">
+        <div class="textArea">
+          <h5 class="text-white">最新活動</h5>
+          <p>購買捍衛任務4電影票即可享有爆米花<em>買一送一</em> 優惠!</p>
+          <button>了解更多</button>
+        </div>
+        <img
+          class="img-fluid"
+          src="https://images.pexels.com/photos/7234378/pexels-photo-7234378.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        />
+      </div>
+      <div class="actArea d-flex justify-content-between">
+        <div class="textArea">
+          <h5 class="text-white">最新活動</h5>
+          <p>購買捍衛任務4電影票即可獲得電影海報</p>
+          <button>了解更多</button>
+        </div>
+        <img
+          class="img-fluid"
+          src="https://movies.yahoo.com.tw/i/r/w420/production/movies/March2023/Gi2xZHkA7hhDcsKUPJ1c-1080x1542.jpg"
+        />
+      </div>
+      <div class="actArea d-flex justify-content-between">
+        <div class="textArea">
+          <h5 class="text-white">最新活動</h5>
+          <p>凡持電影票根可至服務台兌換精美禮物!</p>
+          <button>了解更多</button>
+        </div>
+        <img
+          class="img-fluid"
+          src="https://images.pexels.com/photos/1661908/pexels-photo-1661908.jpeg?auto=compress&cs=tinysrgb&w=1600"
+        />
+      </div>
+    </section>
+    <!-- 頁尾 -->
+    <footer class="container-100 d-flex">
+      <div class="footinfo mx-5">
+        <img src="./img/logo-removebg-preview.png" />
+        <p>開館時間｜週二～週日 00:00～24:00 （週一休館）</p>
+        <p>地　　址｜台中市西區神奇路1000號</p>
+        <p>電　　話｜04-3333333</p>
+        <p>信　　箱｜abc123@gmail.com</p>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </div>
+      <div class="footlink d-flex flex-column text-center mx-5">
+        <p class="text-light">快速連結</p>
+        <p><a href="./ingmovie.html">上映電影</a></p>
+        <p><a href="./commovies.html">即將上映</a></p>
+        <p><a href="./price.html">票價資訊</a></p>
+        <p><a href="./book.html">線上訂票</a></p>
+      </div>
+      <a href="#"><i class="bi bi-arrow-up-square top"></i></a>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./action/index.js"></script>
+  </body>
+</html>

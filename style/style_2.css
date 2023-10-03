@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* 電影圖片 */
+.title {
+  position: relative;
+  top: 18vh;
+  text-align: center;
+  color: white;
+}
+.ingMoviesArea {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+}
+.comMoviesArea {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+}
+
+.movie_div {
+  position: relative;
+  width: 30vh;
+  margin: 1.2rem;
+  object-fit: cover;
+}
+
+.movie_img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #000000b8;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.movie_div:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 3px white;
+}
+
+.movies_title {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* Modal */
+
+.ModalBody {
+  padding: 1rem;
+}
+.modalInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2rem;
+}
+.modalInfo > iframe {
+  width: 100%;
+  height: 40vh;
+}
+/* 票價表 */
+.priceArea {
+  text-align: center;
+  margin: 20vh 1rem 10vh 1rem;
+}
+
+tr,
+td,
+th {
+  line-height: 2.3rem;
+  color: rgb(87, 87, 87);
+}
+table p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+/* 訂票 */
+.book {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+.contentArea {
+  color: rgba(217, 217, 217, 0.808);
+}
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 5px;
+  background: #efefef;
+}
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  box-shadow: 0px 0px 3px 2px rgb(128, 128, 128);
+  outline: none;
+}
+.form-container .btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+#login {
+  background-color: #4e4d4d;
+}
+#join {
+  background-color: #b2975e;
+}
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
