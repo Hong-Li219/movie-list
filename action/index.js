@@ -3,35 +3,35 @@ const movies = [
   // 所有遷入電影的內容
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/March2023/Gi2xZHkA7hhDcsKUPJ1c-1080x1542.jpg",
+      "./img/demo-movie1.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/April2023/jVMhn1ab1OjG0y51bdUv-1080x1543.jpg",
+      "./img/demo-movie2.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/May2023/LrCUi1XZJcsHswfiewjm-1984x2835.jpg",
+      "./img/demo-movie3.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/November2022/Ehl7e402ukfrGS1Ih7Mh-1080x1542.jpg",
+      "./img/demo-movie4.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/May2023/5AJrF8mgGEol8p8X1QaW-500x714.jpg",
+      "./img/demo-movie5.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/June2023/ryIvRLuV3zCNDvGoX1X4-1080x1543.jpg",
+      "./img/demo-movie6.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/April2023/A0fPKGtRZxCWLqlUF8LV-1080x1539.jpg",
+      "./img/demo-movie7.jpg",
   },
   {
     movieImg:
-      "https://movies.yahoo.com.tw/i/o/production/movies/May2023/Z5ZSSQjySC1ImGK5wp7L-1080x1542.jpg",
+      "./img/demo-movie8.jpg",
   },
 ];
 const specialMovies = document.querySelector("#specialMovies"); // 欲加入內容的父元素
@@ -49,7 +49,7 @@ function putMovies(originMovies) {
   let tempHtml = ``; // 宣告一空變數暫存欲加入的ＨTML元素
   for (let n = 0; n < originMovies.length; n++) {
     tempHtml += `<div class="card m-2" >
-        <img src="${originMovies[n].movieImg}" class="card-img-top img-fluid rounded">
+        <img src="${originMovies[n].movieImg}" class="card-img-top h-100 img-fluid rounded">
         </div>`;
   }
   specialMovies.innerHTML = tempHtml; // 在目標父元素中插入暫存的元素內容
